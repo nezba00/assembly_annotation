@@ -1,0 +1,272 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+#SEPARATOR TAB
+#SEPARATOR COMMA
+SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL label1
+
+#dataset color (can be changed later)
+COLOR #ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE Dataset_legend
+#LEGEND_SCALE 1
+#LEGEND_POSITION_X 100
+#LEGEND_POSITION_Y 100
+#LEGEND_HORIZONTAL 0
+#LEGEND_SHAPES 1 1 2 2
+#LEGEND_COLORS #ff0000 #00ff00 rgba(0,255,0,0.5) #0000ff
+#LEGEND_LABELS value1 value2 value3 value4
+#LEGEND_SHAPE_SCALES 1 1 0.5 1
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#if set to 1, border will be drawn completely around each colored strip box
+#COMPLETE_BORDER 0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#display or hide the individual label inside each colored strip (when defined in the data below)
+#SHOW_STRIP_LABELS 1
+
+#position of the strip label within the box; 'top', 'center' or 'bottom'
+#STRIP_LABEL_POSITION center
+
+#strip label size factor (relative to the tree leaf labels)
+#STRIP_LABEL_SIZE_FACTOR 1
+
+
+#rotation of the strip labels; used only in rectangular tree display mode
+#STRIP_LABEL_ROTATION 0
+
+#strip label shift in pixels (positive or negative)
+#STRIP_LABEL_SHIFT 0
+
+#STRIP_LABEL_COLOR #000000
+
+#draw a black outline around the text (width in pixels)
+#STRIP_LABEL_OUTLINE 0.5
+
+#calculate the label color automatically (black or white), based on the darkness of the color strip
+#STRIP_LABEL_AUTO_COLOR 0
+
+#display or hide the dataset label above the colored strip
+#SHOW_LABELS 1
+
+#dataset label size factor
+#SIZE_FACTOR 1
+
+#dataset label rotation
+#LABEL_ROTATION 0
+
+#dataset label shift in pixels (positive or negative)
+#LABEL_SHIFT 0
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+ATHILA0_I #00FF00 Athila
+ATHILA2_I #00FF00 Athila
+ATHILA3_I #00FF00 Athila
+ATHILA4C_I #00FF00 Athila
+ATHILA4D_I #00FF00 Athila
+ATHILA4_I #00FF00 Athila
+ATHILA5_I #00FF00 Athila
+ATHILA6A_I #00FF00 Athila
+ATHILA6B_I #00FF00 Athila
+ATHILA6C_I #00FF00 Athila
+ATHILA7A_I #00FF00 Athila
+ATHILA7_I #00FF00 Athila
+ATHILA8A_I #00FF00 Athila
+ATHILA8B_I #00FF00 Athila
+ATHILA_I #00FF00 Athila
+Gypsy-2_EPa-I #00FF00 Athila
+Gypsy-31_ALY-I #00FF00 Athila
+Gypsy-34_ALy-I #00FF00 Athila
+Gypsy-43_BRa-I #00FF00 Athila
+Gypsy-44_BRa-I #00FF00 Athila
+Gypsy-4_EPa-I #00FF00 Athila
+Gypsy-5_ALY-I #00FF00 Athila
+ATGP11_I #0000FF CRM
+ATGP5A_I #0000FF CRM
+ATGP5A_LTR #0000FF CRM
+ATGP5I #0000FF CRM
+ATGP6I #0000FF CRM
+ATGP6LTR #0000FF CRM
+ATGP7I #0000FF CRM
+ATGP7LTR #0000FF CRM
+Gypsy-10_BRa-I #0000FF CRM
+Gypsy-11_BRa-I #0000FF CRM
+Gypsy-12_ALY-I #0000FF CRM
+Gypsy-12_ALY-LTR #0000FF CRM
+Gypsy-13_ALY-I #0000FF CRM
+Gypsy-13_ALY-LTR #0000FF CRM
+Gypsy-14_ALY-I #0000FF CRM
+Gypsy-15_BRa-I #0000FF CRM
+Gypsy-17_ALY-I #0000FF CRM
+Gypsy-18_BRa-I #0000FF CRM
+Gypsy-19_BRa-I #0000FF CRM
+Gypsy-1_ALY-I #0000FF CRM
+Gypsy-1_EPa-I #0000FF CRM
+Gypsy-1_EPa-LTR #0000FF CRM
+Gypsy-20_ALY-I #0000FF CRM
+Gypsy-20_ALY-LTR #0000FF CRM
+Gypsy-22_ALY-I #0000FF CRM
+Gypsy-23_BRa-I #0000FF CRM
+Gypsy-24_ALY-I #0000FF CRM
+Gypsy-24_BRa-I #0000FF CRM
+Gypsy-27_BRa-I #0000FF CRM
+Gypsy-28_ALY-I #0000FF CRM
+Gypsy-2_ALY-I #0000FF CRM
+Gypsy-2_ALY-LTR #0000FF CRM
+Gypsy-2_BRa-I #0000FF CRM
+Gypsy-2_EPa-I #0000FF CRM
+Gypsy-2_EPa-LTR #0000FF CRM
+Gypsy-32_ALY-I #0000FF CRM
+Gypsy-36_ALy-I #0000FF CRM
+Gypsy-36_ALy-LTR #0000FF CRM
+Gypsy-45_BRa-I #0000FF CRM
+Gypsy-45_BRa-LTR #0000FF CRM
+Gypsy-6_EPa-I #0000FF CRM
+Gypsy-6_EPa-LTR #0000FF CRM
+Gypsy-9_ALY-I #0000FF CRM
+Gypsy-9_EPa-I #0000FF CRM
+Gypsy-9_EPa-LTR #0000FF CRM
+Gypsy-31_BRa-I #008080 Galadriel
+ATGP3A_I #FFA500 Reina
+ATGP3B_I #FFA500 Reina
+ATGP3I #FFA500 Reina
+ATGP4_I #FFA500 Reina
+ATGP9BI #FFA500 Reina
+Gypsy-12_BRa-I #FFA500 Reina
+Gypsy-13_BRa-I #FFA500 Reina
+Gypsy-14_BRa-I #FFA500 Reina
+Gypsy-15_ALY-I #FFA500 Reina
+Gypsy-16_ALY-I #FFA500 Reina
+Gypsy-16_BRa-I #FFA500 Reina
+Gypsy-17_BRa-I #FFA500 Reina
+Gypsy-19_ALY-I #FFA500 Reina
+Gypsy-1_BRa-I #FFA500 Reina
+Gypsy-21_BRa-I #FFA500 Reina
+Gypsy-22_BRa-I #FFA500 Reina
+Gypsy-25_BRa-I #FFA500 Reina
+Gypsy-26_ALY-I #FFA500 Reina
+Gypsy-26_BRa-I #FFA500 Reina
+Gypsy-27_ALY-I #FFA500 Reina
+Gypsy-28_BRa-I #FFA500 Reina
+Gypsy-29_ALY-I #FFA500 Reina
+Gypsy-29_BRa-I #FFA500 Reina
+Gypsy-30_BRa-I #FFA500 Reina
+Gypsy-32_BRa-I #FFA500 Reina
+Gypsy-33_BRa-I #FFA500 Reina
+Gypsy-34_BRa-I #FFA500 Reina
+Gypsy-35_ALy-I #FFA500 Reina
+Gypsy-35_BRa-I #FFA500 Reina
+Gypsy-36_BRa-I #FFA500 Reina
+Gypsy-37_BRa-I #FFA500 Reina
+Gypsy-38_BRa-I #FFA500 Reina
+Gypsy-39_BRa-I #FFA500 Reina
+Gypsy-3_BRa-I #FFA500 Reina
+Gypsy-3_EPa-I #FFA500 Reina
+Gypsy-40_BRa-I #FFA500 Reina
+Gypsy-41_BRa-I #FFA500 Reina
+Gypsy-41_BRa-LTR #FFA500 Reina
+Gypsy-46_BRa-I #FFA500 Reina
+Gypsy-48_BRa-I #FFA500 Reina
+Gypsy-4_BRa-I #FFA500 Reina
+Gypsy-5_BRa-I #FFA500 Reina
+Gypsy-5_EPa-I #FFA500 Reina
+Gypsy-6_ALY-I #FFA500 Reina
+Gypsy-6_BRa-I #FFA500 Reina
+Gypsy-7_ALY-I #FFA500 Reina
+Gypsy-7_BRa-I #FFA500 Reina
+Gypsy-7_EPa-I #FFA500 Reina
+Gypsy-8_BRa-I #FFA500 Reina
+Gypsy-8_EPa-I #FFA500 Reina
+Gypsy-9_BRa-I #FFA500 Reina
+ATLANTYS1_I #FF0000 Retand
+ATLANTYS2_I #FF0000 Retand
+ATLANTYS3I #FF0000 Retand
+Gypsy-10_ALY-I #FF0000 Retand
+Gypsy-11_ALY-I #FF0000 Retand
+Gypsy-15_AT-I #FF0000 Retand
+Gypsy-18_ALY-I #FF0000 Retand
+Gypsy-20_BRa-I #FF0000 Retand
+Gypsy-21_ALY-I #FF0000 Retand
+Gypsy-30_ALY-I #FF0000 Retand
+Gypsy-33_ALY-I #FF0000 Retand
+Gypsy-3_ALY-I #FF0000 Retand
+Gypsy-42_BRa-I #FF0000 Retand
+Gypsy-46_ALy-I #FF0000 Retand
+Gypsy-4_ALY-I #FF0000 Retand
+Gypsy-8_ALY-I #FF0000 Retand
+ATGP10_I #800080 Tekay
+ATGP1I #800080 Tekay
+ATGP2I #800080 Tekay
+ATGP8I #800080 Tekay
+BNINTMO #800080 Tekay
+Gypsy-23_ALY-I #800080 Tekay
+Gypsy-25_ALY-I #800080 Tekay
+Gypsy-47_BRa-I #800080 Tekay
+Gypsy-4_EPa-LTR #808080 unknown
+
+
+
+
+#Examples:
+#assign a red colored strip to leaf 9606, with label 'Human'
+#9606 #ff0000 Human
+
+#assign a green, semi-transparent (alpha 0.5) strip to an internal node, without any label. If 'Show internal values' is set to 'No', this will only be displayed if the node is collapsed. 
+#9606|5664 rgba(0,255,0,0.5)
